@@ -18,7 +18,8 @@ export const formSubmit = (form: HTMLFormElement) => {
 
     text.textContent = 'Sending...';
     setTimeout(() => {
-      text.textContent = "You're in";
+      text.textContent = "You're in!";
+      form.classList.add('cc-success');
     }, 500);
   });
 };
