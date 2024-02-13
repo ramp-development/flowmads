@@ -6,6 +6,7 @@ export const home = () => {
   console.log('home');
 
   updateRects();
+  setTimeout(updateRects, 1000);
   window.onresize = updateRects;
 
   function updateRects() {

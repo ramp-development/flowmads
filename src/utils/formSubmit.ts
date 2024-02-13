@@ -7,7 +7,7 @@ export const formSubmit = (form: HTMLFormElement) => {
   console.log('form');
 
   form.addEventListener('submit', (event) => {
-    // event.preventDefault();
+    event.preventDefault();
     console.log('submitted');
 
     const icons = queryElements<HTMLElement>('.btn-icon', form);
